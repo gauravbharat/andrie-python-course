@@ -1,0 +1,3 @@
+pipy Dependencies:
+- translate
+- pillow
