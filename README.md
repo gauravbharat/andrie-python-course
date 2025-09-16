@@ -1,3 +1,4 @@
-pipy Dependencies:
+pipy package dependencies:
 - translate
 - pillow
+- pypdf
