@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Flask demo</title>
+  <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/style.css') }}" />
+  <!-- url_for creates url for static folder and the filename,
+  passed in a template literal (behind the scenes - jinja2) -->
+  <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+</head>
+<body>
+  <h1>Flask usage demo</h1>
+  {% if blog_id %}
+  <h2>Blog {{blog_id}}</h2>
+  {% endif %}
+  <script src="{{url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
+
